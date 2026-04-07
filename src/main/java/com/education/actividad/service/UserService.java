@@ -6,14 +6,14 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.education.actividad.model.Usuario;
-import com.education.actividad.repository.UserRepository;
+import com.education.actividad.repository.UsuarioRepository;
 
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
 public class UserService {
-  private final UserRepository userRepository;
+  private final UsuarioRepository userRepository;
 
   public List<Usuario> obtnerTodosLosUsuarios() {
     return userRepository.findAll();
