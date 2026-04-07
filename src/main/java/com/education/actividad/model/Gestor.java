@@ -29,5 +29,5 @@ public class Gestor {
 
   @OneToMany()
   @JoinColumn(name = "usuario_id", referencedColumnName = "id", unique = true)
-  private UserEntity usuario;
+  private Usuario usuario;
 }
